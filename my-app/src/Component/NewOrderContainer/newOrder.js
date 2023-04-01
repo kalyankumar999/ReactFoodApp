@@ -14,7 +14,7 @@ const NewOrder = () => {
 
   useEffect(() => {
     setIsSubmit(
-      Object.keys(formErrors).length === 0 && isSubmitClicked ? true : false
+      Object.keys(formErrors)?.length === 0 && isSubmitClicked ? true : false
     );
   }, [formErrors]);
 
@@ -69,7 +69,7 @@ const NewOrder = () => {
               onChange={handleChange}
             />
           </div>
-          <p className="errorText">{formErrors.Name}</p>
+          <p className="errorText">{formErrors?.Name}</p>
           <div className="inputDiv2">
             <label>Address : </label>
             <input
@@ -77,11 +77,11 @@ const NewOrder = () => {
               type="text"
               placeholder="enter your Address"
               className="inputs"
-              value={formValues.Address}
+              value={formValues?.Address}
               onChange={handleChange}
             />
           </div>
-          <p className="errorText">{formErrors.Address}</p>
+          <p className="errorText">{formErrors?.Address}</p>
           <div className="inputDiv3">
             <label>Contact : </label>
             <input
@@ -89,11 +89,11 @@ const NewOrder = () => {
               type="text"
               placeholder="enter your Contact"
               className="inputs"
-              value={formValues.Contact}
+              value={formValues?.Contact}
               onChange={handleChange}
             />
           </div>
-          <p className="errorText">{formErrors.Contact}</p>
+          <p className="errorText">{formErrors?.Contact}</p>
           <div className="inputDiv4">
             <label>Payment : </label>
             <input
@@ -101,16 +101,16 @@ const NewOrder = () => {
               type="text"
               placeholder="enter Ammount"
               className="inputs"
-              value={formValues.Payment}
+              value={formValues?.Payment}
               onChange={handleChange}
             />
           </div>
-          <p className="errorText">{formErrors.Payment}</p>
+          <p className="errorText">{formErrors?.Payment}</p>
           <button className="order">ORDER</button>
         </form>
       )}
 
-      {Object.keys(formErrors).length === 0 && isSubmit ? (
+      {Object.keys(formErrors)?.length === 0 && isSubmit ? (
         <>
           <div className="order_clk">
             Great ..! Congratulations

@@ -11,7 +11,7 @@ function Header(props) {
   const { setFoodItem, selectedFoodItem, isDashBoard, setSelectedFoodItem} = props;
 
   const [showCart, setShowCart] = useState(false);
-console.log("testing", isDashBoard, showCart, selectedFoodItem.length)
+
   const OpenCart = () => {
     setShowCart(!showCart);
   };
@@ -26,7 +26,7 @@ console.log("testing", isDashBoard, showCart, selectedFoodItem.length)
   const handleRemove = (index)=>{
   
     const selectedFoodItemCopy = selectedFoodItem;
-    selectedFoodItemCopy.splice(index,1)    
+    selectedFoodItemCopy?.splice(index,1)    
     setSelectedFoodItem([...selectedFoodItemCopy]) 
     const selectedItemFirebase ={
       data : [...selectedFoodItemCopy]
@@ -95,7 +95,7 @@ console.log("testing", isDashBoard, showCart, selectedFoodItem.length)
         {isDashBoard && (
           <div className="shoppingCart">
             <div className="cartCount">
-              <div className="count">{selectedFoodItem.length}</div>
+              <div className="count">{selectedFoodItem?.length}</div>
             </div>
             <button className="cartButton" onClick={OpenCart}>
               <img className="CartImage" src={CartIcon} />

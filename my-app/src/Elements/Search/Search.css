@@ -1,0 +1,22 @@
+.search {
+  margin-left: 10px;
+  border-radius: 5px;
+  border: solid 1px rgb(121, 111, 111);
+  margin-top: 4px;
+  height: 27px;
+  font-size: 20px;
+  position: relative;
+}
+.inputdiv {
+  position: relative;
+
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.searchIcon {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  padding-top: 8px;
+  margin-left: -30px;
+}

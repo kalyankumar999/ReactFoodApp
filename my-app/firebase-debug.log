@@ -1,0 +1,21 @@
+[debug] [2023-04-01T07:34:04.295Z] ----------------------------------------------------------------------
+[debug] [2023-04-01T07:34:04.297Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\anilk\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-04-01T07:34:04.298Z] CLI Version:   11.25.2
+[debug] [2023-04-01T07:34:04.298Z] Platform:      win32
+[debug] [2023-04-01T07:34:04.298Z] Node Version:  v18.14.0
+[debug] [2023-04-01T07:34:04.299Z] Time:          Sat Apr 01 2023 13:04:04 GMT+0530 (India Standard Time)
+[debug] [2023-04-01T07:34:04.299Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-01T07:34:04.307Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-01T07:34:04.308Z] > authorizing via signed-in user (kalyankumarsmail@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\anilk\Desktop\kalyan\reactFoodApp\my-app
+
